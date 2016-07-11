@@ -1,5 +1,5 @@
-﻿Build started 3/4/2016 9:42:49 AM.
-     1>Project "C:\IndigoBox Studios\Workspace\Workspace\Time-Based\342016\342016\342016.vcxproj" on node 2 (Build target(s)).
+﻿Build started 6/3/2016 2:52:07 PM.
+     1>Project "C:\Workspace\Workspace\Workspace\Time-Based\342016\342016\342016.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\342016.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
          stdafx.cpp
@@ -8,12 +8,13 @@
        ResourceCompile:
          C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\342016.res" 342016.rc 
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\IndigoBox Studios\Workspace\Workspace\Time-Based\342016\Debug\342016.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\IndigoBox Studios\Workspace\Workspace\Time-Based\342016\Debug\342016.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\IndigoBox Studios\Workspace\Workspace\Time-Based\342016\Debug\342016.lib" /MACHINE:X86 Debug\342016.res
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Workspace\Workspace\Workspace\Time-Based\342016\Debug\342016.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Workspace\Workspace\Workspace\Time-Based\342016\Debug\342016.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Workspace\Workspace\Workspace\Time-Based\342016\Debug\342016.lib" /MACHINE:X86 Debug\342016.res
          Debug\342016.obj
          Debug\stdafx.obj
-         342016.vcxproj -> C:\IndigoBox Studios\Workspace\Workspace\Time-Based\342016\Debug\342016.exe
-     1>Done Building Project "C:\IndigoBox Studios\Workspace\Workspace\Time-Based\342016\342016\342016.vcxproj" (Build target(s)).
+         LINK : C:\Workspace\Workspace\Workspace\Time-Based\342016\Debug\342016.exe not found or not built by the last incremental link; performing full link
+         342016.vcxproj -> C:\Workspace\Workspace\Workspace\Time-Based\342016\Debug\342016.exe
+     1>Done Building Project "C:\Workspace\Workspace\Workspace\Time-Based\342016\342016\342016.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.15
+Time Elapsed 00:00:02.66

@@ -1,0 +1,9 @@
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\bin\Debug\CopyOnGitHub.exe.config
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\bin\Debug\CopyOnGitHub.exe
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\bin\Debug\CopyOnGitHub.pdb
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\obj\Debug\CopyOnGitHub.csprojResolveAssemblyReference.cache
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\obj\Debug\CopyOnGitHub.Form1.resources
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\obj\Debug\CopyOnGitHub.Properties.Resources.resources
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\obj\Debug\CopyOnGitHub.csproj.GenerateResource.Cache
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\obj\Debug\CopyOnGitHub.exe
+C:\Workspace\Workspace\Workspace\Indigo\711-GitHubSetUpSnowshoes\CopyOnGitHub\CopyOnGitHub\obj\Debug\CopyOnGitHub.pdb
