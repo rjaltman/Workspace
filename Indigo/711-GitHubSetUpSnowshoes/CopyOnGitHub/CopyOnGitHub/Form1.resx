@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="subtext.Text" xml:space="preserve">
-    <value>We just have to copy the Snowshoes files into the necessary directory at "C:\ProjectSnowshoes". 
+    <value>We just have to copy some Snowshoes files, like icons and small system apps, into the necessary directory at "C:\ProjectSnowshoes". 
 
-This seems kind of silly, but this way you can keep the project files to work on here, and can run / debug with resources in their proper runtime locations.</value>
+This seems a bit odd, but this way you can keep the project files to work on here, and can run / debug with resources in their proper runtime locations.</value>
   </data>
 </root>
