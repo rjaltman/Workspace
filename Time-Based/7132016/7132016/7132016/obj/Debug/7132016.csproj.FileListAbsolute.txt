@@ -1,0 +1,14 @@
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\bin\Debug\7132016.exe.config
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\bin\Debug\7132016.exe
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\bin\Debug\7132016.pdb
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\7132016.csprojResolveAssemblyReference.cache
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\MainWindow.g.cs
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\App.g.cs
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\7132016_MarkupCompile.cache
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\7132016_MarkupCompile.lref
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\MainWindow.baml
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\7132016.g.resources
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\_7132016.Properties.Resources.resources
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\7132016.csproj.GenerateResource.Cache
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\7132016.exe
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\Debug\7132016.pdb
