@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Interop;
-using System.Drawing;
+
 
 namespace _7132016
 {
@@ -35,8 +35,11 @@ namespace _7132016
             this.Width = SystemParameters.WorkArea.Width;
             this.Topmost = true;
             System.Diagnostics.Process.Start("taskkill.exe", "/F /IM explorer.exe");
-            
+            goGenerateProcessesFriendship();
         }
+
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern void ShowWindow(IntPtr hWnd, int nCmdShow);
 
         delegate bool EnumThreadDelegate(IntPtr hWnd, IntPtr lParam);
         [DllImport("user32.dll")]
@@ -104,7 +107,7 @@ namespace _7132016
                                     hmGreatJobFantasticAmazing.Stretch = Stretch.Fill;
                                     //hmGreatJobFantasticAmazing.BackgroundImageLayout = ImageLayout.Zoom;
 
-                                    System.Drawing.Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap().Save(@"C:\ProjectSnowshoes\temptaskico.png");
+                                    //System.Drawing.Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap();
 
                                     //ImageFactory grayify = new ImageFactory();
                                     //grayify.Load(@"C:\ProjectSnowshoes\temptaskico.png");
@@ -113,105 +116,105 @@ namespace _7132016
                                     //sizeeeee.Width = 20;
                                     //ImageProcessor.Imaging.ResizeLayer reLay = new ImageProcessor.Imaging.ResizeLayer(sizeeeee);
                                     //grayify.Resize(reLay);
-
                                     
-
-                                    hmGreatJobFantasticAmazing = "@"C:\ProjectSnowshoes\temptaskico.png";
-                                    hmGreatJobFantasticAmazing.Click += (sender, args) =>
+                                    BitmapImage bimg = new BitmapImage(new Uri(@"C:\ProjectSnowshoes\temptaskico.png"));
+                                    //bimg = System.Drawing.Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName);
+                                    hmGreatJobFantasticAmazing.Source = bimg;
+                                    hmGreatJobFantasticAmazing.MouseUp += (sender, args) =>
                                     {
 
                                         ShowWindow(theProcess.MainWindowHandle, 5);
                                         ShowWindow(theProcess.MainWindowHandle, 9);
                                     };
-                                    hmGreatJobFantasticAmazing.MouseHover += (sender, args) =>
-                                    {
-                                        Properties.Settings.Default.stayHere = true;
-                                        Properties.Settings.Default.Save();
-                                        int recordNao = hmGreatJobFantasticAmazing.Left;
+                                    //hmGreatJobFantasticAmazing.MouseHover += (sender, args) =>
+                                    //{
+                                    //    Properties.Settings.Default.stayHere = true;
+                                    //    Properties.Settings.Default.Save();
+                                    //    int recordNao = hmGreatJobFantasticAmazing.Left;
 
-                                        hmGreatJobFantasticAmazing.Image.Save(@"C:\ProjectSnowshoes\TheyNeedToKeepOriginalAlbums.png");
-                                        Size sizeeeeeA = new System.Drawing.Size();
-                                        sizeeeeeA.Height = 100;
-                                        sizeeeeeA.Width = 100;
-                                        ImageProcessor.Imaging.ResizeLayer reLayA = new ImageProcessor.Imaging.ResizeLayer(sizeeeeeA);
-                                        ImageProcessor.Imaging.GaussianLayer gauLay = new ImageProcessor.Imaging.GaussianLayer();
-                                        gauLay.Sigma = 2;
-                                        gauLay.Threshold = 10;
-                                        gauLay.Size = 20;
-                                        ImageFactory backify = new ImageFactory();
-                                        backify.Load(@"C:\ProjectSnowshoes\TheyNeedToKeepOriginalAlbums.png");
-                                        backify.Brightness(-30);
-                                        backify.Resize(reLayA);
-                                        backify.GaussianBlur(gauLay);
-                                        ImageProcessor.Imaging.CropLayer notAsLongAsOriginalName = new ImageProcessor.Imaging.CropLayer(90, 0, 0, 0, ImageProcessor.Imaging.CropMode.Percentage);
-                                        backify.Crop(new Rectangle(25, (100 - this.Height) / 2, 50, this.Height));
-                                        hmGreatJobFantasticAmazing.BackgroundImage = backify.Image;
-                                        grayify.Save(@"C:\ProjectSnowshoes\TheyStillNeedToKeepOriginalAlbums.png");
-                                        ImageFactory grayifyA = new ImageFactory();
-                                        grayifyA.Load(@"C:\ProjectSnowshoes\TheyStillNeedToKeepOriginalAlbums.png");
-                                        grayifyA.Saturation(44);
-                                        grayifyA.Brightness(42);
-                                        hmGreatJobFantasticAmazing.Image = grayifyA.Image;
-                                        // Yeahhhhhhhhh I'm going to have to do this another way
-                                        // panel1.Controls.Add(areYouSeriouslyStillDoingThisLetItGo);
-                                        // Oh
-                                        // I can just make another form to draw over and go have turnips with parameters
-                                        // Also credits to Microsoft Word's "Sentence Case" option as this came out in all caps originally
-                                        // Measuring string turnt-up-edness was guided by an answer on Stack Overflow by Tom Anderson.
-                                        String keepThisShortWeNeedToOptimize = sb.ToString().Replace("&", "&&");
-                                        Graphics heyGuessWhatGraphicsYeahThatsRight = Graphics.FromImage(new Bitmap(1, 1));
-                                        SizeF sure = heyGuessWhatGraphicsYeahThatsRight.MeasureString(keepThisShortWeNeedToOptimize, new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 14, FontStyle.Regular, GraphicsUnit.Point));
-                                        Size sureAgain = sure.ToSize();
-                                        int recordThatJim;
-                                        if (sureAgain.Width >= 300)
-                                        {
-                                            recordThatJim = sureAgain.Width + 10;
-                                        }
-                                        else
-                                        {
-                                            recordThatJim = 300;
-                                        }
+                                    //    hmGreatJobFantasticAmazing.Image.Save(@"C:\ProjectSnowshoes\TheyNeedToKeepOriginalAlbums.png");
+                                    //    Size sizeeeeeA = new System.Drawing.Size();
+                                    //    sizeeeeeA.Height = 100;
+                                    //    sizeeeeeA.Width = 100;
+                                    //    ImageProcessor.Imaging.ResizeLayer reLayA = new ImageProcessor.Imaging.ResizeLayer(sizeeeeeA);
+                                    //    ImageProcessor.Imaging.GaussianLayer gauLay = new ImageProcessor.Imaging.GaussianLayer();
+                                    //    gauLay.Sigma = 2;
+                                    //    gauLay.Threshold = 10;
+                                    //    gauLay.Size = 20;
+                                    //    ImageFactory backify = new ImageFactory();
+                                    //    backify.Load(@"C:\ProjectSnowshoes\TheyNeedToKeepOriginalAlbums.png");
+                                    //    backify.Brightness(-30);
+                                    //    backify.Resize(reLayA);
+                                    //    backify.GaussianBlur(gauLay);
+                                    //    ImageProcessor.Imaging.CropLayer notAsLongAsOriginalName = new ImageProcessor.Imaging.CropLayer(90, 0, 0, 0, ImageProcessor.Imaging.CropMode.Percentage);
+                                    //    backify.Crop(new Rectangle(25, (100 - this.Height) / 2, 50, this.Height));
+                                    //    hmGreatJobFantasticAmazing.BackgroundImage = backify.Image;
+                                    //    grayify.Save(@"C:\ProjectSnowshoes\TheyStillNeedToKeepOriginalAlbums.png");
+                                    //    ImageFactory grayifyA = new ImageFactory();
+                                    //    grayifyA.Load(@"C:\ProjectSnowshoes\TheyStillNeedToKeepOriginalAlbums.png");
+                                    //    grayifyA.Saturation(44);
+                                    //    grayifyA.Brightness(42);
+                                    //    hmGreatJobFantasticAmazing.Image = grayifyA.Image;
+                                    //    // Yeahhhhhhhhh I'm going to have to do this another way
+                                    //    // panel1.Controls.Add(areYouSeriouslyStillDoingThisLetItGo);
+                                    //    // Oh
+                                    //    // I can just make another form to draw over and go have turnips with parameters
+                                    //    // Also credits to Microsoft Word's "Sentence Case" option as this came out in all caps originally
+                                    //    // Measuring string turnt-up-edness was guided by an answer on Stack Overflow by Tom Anderson.
+                                    //    String keepThisShortWeNeedToOptimize = sb.ToString().Replace("&", "&&");
+                                    //    Graphics heyGuessWhatGraphicsYeahThatsRight = Graphics.FromImage(new Bitmap(1, 1));
+                                    //    SizeF sure = heyGuessWhatGraphicsYeahThatsRight.MeasureString(keepThisShortWeNeedToOptimize, new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 14, FontStyle.Regular, GraphicsUnit.Point));
+                                    //    Size sureAgain = sure.ToSize();
+                                    //    int recordThatJim;
+                                    //    if (sureAgain.Width >= 300)
+                                    //    {
+                                    //        recordThatJim = sureAgain.Width + 10;
+                                    //    }
+                                    //    else
+                                    //    {
+                                    //        recordThatJim = 300;
+                                    //    }
 
-                                        CanWeMakeAHoverFormLikeThisIsThisLegal notAsLongInstanceName = new CanWeMakeAHoverFormLikeThisIsThisLegal(recordNao + 150, this.Height, recordThatJim, keepThisShortWeNeedToOptimize);
-                                        notAsLongInstanceName.Show();
-                                        notAsLongInstanceName.BringToFront();
+                                    //    CanWeMakeAHoverFormLikeThisIsThisLegal notAsLongInstanceName = new CanWeMakeAHoverFormLikeThisIsThisLegal(recordNao + 150, this.Height, recordThatJim, keepThisShortWeNeedToOptimize);
+                                    //    notAsLongInstanceName.Show();
+                                    //    notAsLongInstanceName.BringToFront();
 
 
-                                        //hmGreatJobFantasticAmazing.BringToFront();
-                                        //panel1.Controls.Add(hmGreatJobFantasticAmazing);
-                                        //hmGreatJobFantasticAmazing.Top = this.Top - 40;
-                                        //hmGreatJobFantasticAmazing.Left = recordNao + 150;
-                                        //hmGreatJobFantasticAmazing.BringToFront();
-                                        //hmGreatJobFantasticAmazing.Invalidate();
-                                        /*hmGreatJobFantasticAmazing.Height = 100;
-                                        hmGreatJobFantasticAmazing.Width = 100;*/
-                                    };
-                                    hmGreatJobFantasticAmazing.MouseLeave += (sender, args) =>
-                                    {
-                                        /*hmGreatJobFantasticAmazing.ImageAlign = ContentAlignment.MiddleCenter;
-                                        hmGreatJobFantasticAmazing.AutoEllipsis = false;
-                                        hmGreatJobFantasticAmazing.Width = 40;
-                                        hmGreatJobFantasticAmazing.BackColor = Color.Transparent;
-                                        //hmGreatJobFantasticAmazing.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 14, FontStyle.Regular);
-                                        //hmGreatJobFantasticAmazing.ForeColor = Color.White;
-                                        hmGreatJobFantasticAmazing.TextAlign = ContentAlignment.MiddleLeft;
-                                        hmGreatJobFantasticAmazing.Text = "";*/
-                                        try
-                                        {
-                                            Application.OpenForms["CanWeMakeAHoverFormLikeThisIsThisLegal"].Close();
-                                        }
-                                        catch (Exception exTurnip) { }
-                                        hmGreatJobFantasticAmazing.BackgroundImage = null;
-                                        hmGreatJobFantasticAmazing.Invalidate();
-                                        Properties.Settings.Default.stayHere = false;
-                                        Properties.Settings.Default.Save();
-                                        hmGreatJobFantasticAmazing.Image = grayify.Image;
-                                    };
+                                    //    //hmGreatJobFantasticAmazing.BringToFront();
+                                    //    //panel1.Controls.Add(hmGreatJobFantasticAmazing);
+                                    //    //hmGreatJobFantasticAmazing.Top = this.Top - 40;
+                                    //    //hmGreatJobFantasticAmazing.Left = recordNao + 150;
+                                    //    //hmGreatJobFantasticAmazing.BringToFront();
+                                    //    //hmGreatJobFantasticAmazing.Invalidate();
+                                    //    /*hmGreatJobFantasticAmazing.Height = 100;
+                                    //    hmGreatJobFantasticAmazing.Width = 100;*/
+                                    //};
+                                    //hmGreatJobFantasticAmazing.MouseLeave += (sender, args) =>
+                                    //{
+                                    //    /*hmGreatJobFantasticAmazing.ImageAlign = ContentAlignment.MiddleCenter;
+                                    //    hmGreatJobFantasticAmazing.AutoEllipsis = false;
+                                    //    hmGreatJobFantasticAmazing.Width = 40;
+                                    //    hmGreatJobFantasticAmazing.BackColor = Color.Transparent;
+                                    //    //hmGreatJobFantasticAmazing.Font = new System.Drawing.Font(Properties.Settings.Default.fontsOfScience[Properties.Settings.Default.whoIsThisCrazyDoge], 14, FontStyle.Regular);
+                                    //    //hmGreatJobFantasticAmazing.ForeColor = Color.White;
+                                    //    hmGreatJobFantasticAmazing.TextAlign = ContentAlignment.MiddleLeft;
+                                    //    hmGreatJobFantasticAmazing.Text = "";*/
+                                    //    try
+                                    //    {
+                                    //        Application.OpenForms["CanWeMakeAHoverFormLikeThisIsThisLegal"].Close();
+                                    //    }
+                                    //    catch (Exception exTurnip) { }
+                                    //    hmGreatJobFantasticAmazing.BackgroundImage = null;
+                                    //    hmGreatJobFantasticAmazing.Invalidate();
+                                    //    Properties.Settings.Default.stayHere = false;
+                                    //    Properties.Settings.Default.Save();
+                                    //    hmGreatJobFantasticAmazing.Image = grayify.Image;
+                                    //};
                                     //openFileToolTip.SetToolTip(hmGreatJobFantasticAmazing, theProcess.MainWindowTitle);
                                     //hmGreatJobFantasticAmazing.BackgroundImage = Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap();
-                                    hmGreatJobFantasticAmazing.Height = this.Height;
-                                    hmGreatJobFantasticAmazing.Width = 50;
-                                    spaceForProcesses.Controls.Add(hmGreatJobFantasticAmazing);
+                                    hmGreatJobFantasticAmazing.Height = 12; // or this.height
+                                    hmGreatJobFantasticAmazing.Width = 12;
+                                    appGrid.Children.Add(hmGreatJobFantasticAmazing);
                                 }
                             }
                         }

@@ -15,6 +15,10 @@
         <Label x:Name="label" Content="Jack" HorizontalAlignment="Left" Margin="44,-304,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Source Sans Pro" FontSize="16"/>
         <Grid HorizontalAlignment="Left" Height="0" Margin="235,-304,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="53" Margin="92,-315,0,0" VerticalAlignment="Top" Width="7" Source="C:\Users\RobertJ\Pictures\Project Snowshoes\slash-orng.png" Stretch="UniformToFill"/>
-        <StackPanel x:Name="appGrid" HorizontalAlignment="Left" Height="25" Margin="114,-303,0,0" VerticalAlignment="Top" Width="672" RenderTransformOrigin="0.977,0.227" Background="#00000000"/>
+        <StackPanel x:Name="appGrid" Height="25" Margin="111,-302,31,0" Width="782" RenderTransformOrigin="0.977,0.227" Background="#00000000" ScrollViewer.HorizontalScrollBarVisibility="Visible" VerticalAlignment="Top">
+            <StackPanel.ScrollOwner>
+                <ScrollViewer/>
+            </StackPanel.ScrollOwner>
+        </StackPanel>
     </Grid>
 </Window>
