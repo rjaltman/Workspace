@@ -1,0 +1,16 @@
+﻿<Window x:Class="_7132016.LargeBackgroundWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_7132016"
+        mc:Ignorable="d"
+        Title="Large Background Window, I choose you!" Height="300" Width="300" Visibility="Visible" ShowInTaskbar="False" AllowsTransparency="True" WindowStyle="None">
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\RobertJ\Downloads\Android 6.0 Marshmallow Wallpapers\wp_008.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+    </Grid>
+</Window>

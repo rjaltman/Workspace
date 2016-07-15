@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_7132016"
         mc:Ignorable="d"
-        Title="MainWindow" Height="38.236" Width="924.02" AllowsTransparency="True" WindowStyle="None" Foreground="{x:Null}" Background="#E50055BB" BorderBrush="#99232323" BorderThickness="0,2,0,0">
+        Title="MainWindow" Height="38.236" Width="924.02" AllowsTransparency="True" WindowStyle="None" Foreground="{x:Null}" BorderBrush="#99002EFF" BorderThickness="0" Background="#CC0070C0">
     <Grid Margin="0,308,0,0">
         <Ellipse HorizontalAlignment="Left" Height="32" Margin="7,-305,0,0" Stroke="White" VerticalAlignment="Top" Width="32" RenderTransformOrigin="-0.053,0.429">
             <Ellipse.Fill>
@@ -15,10 +15,11 @@
         <Label x:Name="label" Content="Jack" HorizontalAlignment="Left" Margin="44,-304,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Source Sans Pro" FontSize="16"/>
         <Grid HorizontalAlignment="Left" Height="0" Margin="235,-304,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="53" Margin="92,-315,0,0" VerticalAlignment="Top" Width="7" Source="C:\Users\RobertJ\Pictures\Project Snowshoes\slash-orng.png" Stretch="UniformToFill"/>
-        <StackPanel x:Name="appGrid" Height="25" Margin="111,-302,31,0" Width="782" RenderTransformOrigin="0.977,0.227" Background="#00000000" ScrollViewer.HorizontalScrollBarVisibility="Visible" VerticalAlignment="Top">
+        <StackPanel x:Name="appGrid" Margin="112,-305,111,274" RenderTransformOrigin="0.977,0.227" Background="#00000000" ScrollViewer.HorizontalScrollBarVisibility="Visible" Orientation="Horizontal">
             <StackPanel.ScrollOwner>
                 <ScrollViewer/>
             </StackPanel.ScrollOwner>
         </StackPanel>
+        <Label x:Name="label_Copy" Content="8:38 PM" HorizontalAlignment="Right" Margin="0,-311,-1,268" Foreground="White" FontFamily="Source Sans Pro" RenderTransformOrigin="10.118,0.484" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontWeight="Medium" Width="97" Height="43" FontSize="16"/>
     </Grid>
 </Window>

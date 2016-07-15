@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Interop;
-
+//using System.Drawing;
 
 namespace _7132016
 {
@@ -31,10 +31,15 @@ namespace _7132016
         {
             InitializeComponent();
             this.Left = 0;
-            this.Top = SystemParameters.WorkArea.Height - 2;
+            this.Top = SystemParameters.WorkArea.Height ;
             this.Width = SystemParameters.WorkArea.Width;
+            this.Height = SystemParameters.PrimaryScreenHeight - SystemParameters.WorkArea.Height + 4;
             this.Topmost = true;
             System.Diagnostics.Process.Start("taskkill.exe", "/F /IM explorer.exe");
+            LargeBackgroundWindow w = new LargeBackgroundWindow();
+            w.Height = SystemParameters.PrimaryScreenHeight;
+            w.Width = SystemParameters.PrimaryScreenWidth;
+            w.Show();
             goGenerateProcessesFriendship();
         }
 
@@ -107,7 +112,13 @@ namespace _7132016
                                     hmGreatJobFantasticAmazing.Stretch = Stretch.Fill;
                                     //hmGreatJobFantasticAmazing.BackgroundImageLayout = ImageLayout.Zoom;
 
-                                    //System.Drawing.Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap();
+                                    System.Drawing.Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap().Save(@"C:\ProjectSnowshoes\temptaskico.bmp");
+
+                                    System.Drawing.Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName);
+                                    ImageSource bimg = Imaging.CreateBitmapSourceFromHIcon(
+                                                icon.Handle,
+                                                new Int32Rect(0,0,icon.Width,icon.Height),
+                                                BitmapSizeOptions.FromEmptyOptions());
 
                                     //ImageFactory grayify = new ImageFactory();
                                     //grayify.Load(@"C:\ProjectSnowshoes\temptaskico.png");
@@ -116,8 +127,8 @@ namespace _7132016
                                     //sizeeeee.Width = 20;
                                     //ImageProcessor.Imaging.ResizeLayer reLay = new ImageProcessor.Imaging.ResizeLayer(sizeeeee);
                                     //grayify.Resize(reLay);
-                                    
-                                    BitmapImage bimg = new BitmapImage(new Uri(@"C:\ProjectSnowshoes\temptaskico.png"));
+
+                                    //BitmapImage bimg = new BitmapImage(new Uri(@"C:\ProjectSnowshoes\temptaskico.bmp"));
                                     //bimg = System.Drawing.Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName);
                                     hmGreatJobFantasticAmazing.Source = bimg;
                                     hmGreatJobFantasticAmazing.MouseUp += (sender, args) =>
@@ -212,8 +223,8 @@ namespace _7132016
                                     //};
                                     //openFileToolTip.SetToolTip(hmGreatJobFantasticAmazing, theProcess.MainWindowTitle);
                                     //hmGreatJobFantasticAmazing.BackgroundImage = Icon.ExtractAssociatedIcon(theProcess.Modules[0].FileName).ToBitmap();
-                                    hmGreatJobFantasticAmazing.Height = 12; // or this.height
-                                    hmGreatJobFantasticAmazing.Width = 12;
+                                    hmGreatJobFantasticAmazing.Height = 26; // or this.height
+                                    hmGreatJobFantasticAmazing.Width = 26;
                                     appGrid.Children.Add(hmGreatJobFantasticAmazing);
                                 }
                             }

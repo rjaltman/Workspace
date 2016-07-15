@@ -11,3 +11,8 @@ C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debu
 C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\7132016.csproj.GenerateResource.Cache
 C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\7132016.exe
 C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\7132016.pdb
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\7132016.csprojResolveAssemblyReference.cache
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\LargeBackgroundWindow.g.cs
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\WhatsAPage.g.cs
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\LargeBackgroundWindow.baml
+C:\Workspace\Workspace\Workspace\Time-Based\7132016\7132016\7132016\obj\x64\Debug\WhatsAPage.baml
