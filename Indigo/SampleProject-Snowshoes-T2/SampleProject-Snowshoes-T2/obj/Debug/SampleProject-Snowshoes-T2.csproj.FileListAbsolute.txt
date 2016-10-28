@@ -1,0 +1,3 @@
+C:\Workspace\Workspace\Workspace\Indigo\SampleProject-Snowshoes-T2\SampleProject-Snowshoes-T2\bin\Debug\SampleProject-Snowshoes-T2.exe.config
+C:\Workspace\Workspace\Workspace\Indigo\SampleProject-Snowshoes-T2\SampleProject-Snowshoes-T2\obj\Debug\SampleProject-Snowshoes-T2.exe
+C:\Workspace\Workspace\Workspace\Indigo\SampleProject-Snowshoes-T2\SampleProject-Snowshoes-T2\obj\Debug\SampleProject-Snowshoes-T2.pdb
