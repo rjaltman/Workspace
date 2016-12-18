@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="210*"/>
+            <ColumnDefinition Width="307*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="spaceForProcesses" Grid.ColumnSpan="2" TextWrapping="Wrap" Text="" TextChanged="spaceForProcesses_TextChanged"/>
+
     </Grid>
 </Window>

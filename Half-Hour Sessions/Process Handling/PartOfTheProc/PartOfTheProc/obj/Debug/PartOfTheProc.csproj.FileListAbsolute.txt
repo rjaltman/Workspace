@@ -1,1 +1,14 @@
 C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\bin\Debug\PartOfTheProc.exe.config
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\bin\Debug\PartOfTheProc.exe
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\bin\Debug\PartOfTheProc.pdb
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc.csprojResolveAssemblyReference.cache
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\MainWindow.g.cs
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\App.g.cs
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc_MarkupCompile.cache
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc_MarkupCompile.lref
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\MainWindow.baml
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc.g.resources
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc.Properties.Resources.resources
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc.csproj.GenerateResource.Cache
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc.exe
+C:\Workspace\Workspace\Workspace\Half-Hour Sessions\Process Handling\PartOfTheProc\PartOfTheProc\obj\Debug\PartOfTheProc.pdb
